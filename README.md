@@ -1,4 +1,4 @@
-**Warning!** The optimization may not converge on some GPUs. We've personnaly experienced issues on Tesla V100 and P40 GPUs. When running the code, make sure you get similar results to the paper first. Easiest to check using text inpainting notebook.  Try to set double precision mode or turn off cudnn. 
+**Warning!** The optimization may not converge on some GPUs. We've personally experienced issues on Tesla V100 and P40 GPUs. When running the code, make sure you get similar results to the paper first. Easiest to check using text inpainting notebook.  Try to set double precision mode or turn off cudnn. 
 
 # Deep image prior
 
@@ -33,6 +33,13 @@ Here is the list of libraries you need to install to execute the code:
 All of them can be installed via `conda` (`anaconda`), e.g.
 ```
 conda install jupyter
+```
+
+
+or create an conda env with all dependencies via environment file
+
+```
+conda env create -f environment.yml
 ```
 
 ## Docker image
